@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_background"
+    tools:context="com.example.administrator.divination.activity.DreamActivity">
+    <LinearLayout
+        android:id="@+id/dream_appTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/title_background"
+        >
+        <ImageView
+            android:id="@+id/dream_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/my_back"/>
+       <ImageView
+           android:id="@+id/dream_title_img"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+           android:src="@drawable/title_dream"/>
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/dream_edText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:singleLine="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/dream_appTitle"
+        android:background="#fff"
+        android:hint="搜索梦，如：蛇"/>
+    <ImageView
+        android:id="@+id/dream_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search"
+        android:layout_below="@id/dream_appTitle"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@id/dream_edText"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"/>
+
+    <GridView
+        android:id="@+id/dream_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="5"
+        android:layout_margin="20dp"
+        android:layout_below="@id/dream_edText"
+        android:layout_marginTop="10dp"></GridView>
+
+
+</RelativeLayout>

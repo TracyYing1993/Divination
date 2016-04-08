@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_background"
+    tools:context="com.example.administrator.divination.activity.StartDetailActivity">
+    <LinearLayout
+        android:id="@+id/start_detail_appTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/title_background"
+        >
+        <ImageView
+            android:id="@+id/start_detail_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/my_back"
+            />
+        <ImageView
+            android:id="@+id/start_detail_title_img"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/title_constellation"/>
+    </LinearLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/start_Tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/start_detail_appTitle"/>
+    <LinearLayout
+        android:id="@+id/start_fragment_container"
+        android:layout_below="@id/start_Tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"></LinearLayout>
+
+</RelativeLayout>

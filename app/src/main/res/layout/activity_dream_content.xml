@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_background"
+    tools:context=".activity.DreamContentActivity">
+    <LinearLayout
+        android:id="@+id/dreamContent_appTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/title_background"
+        >
+        <ImageView
+            android:id="@+id/dreamContent_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/my_back"/>
+        <ImageView
+            android:id="@+id/dreamContent_title_img"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/title_dream"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/dreamContentTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dreamContent_appTitle"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#ED6C54"
+        android:text="Title"/>
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/dreamContentTitle"
+        android:background="#ED6C54"/>
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/line">
+    <LinearLayout
+        android:id="@+id/dreamContentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/line"/>
+</ScrollView>
+
+</RelativeLayout>
